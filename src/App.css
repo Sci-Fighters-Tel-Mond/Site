@@ -146,9 +146,14 @@ input[type="submit"]:hover {
 #ultimate-goal,
 #freight-frenzy,
 #powerplay {
-  transition: font-size 0.3s ease, filter 0.3s ease;
+  transition: all 0.3s ease, filter 0.3s ease;
 }
-
+#skystone img,
+#ultimate-goal img,
+#freight-frenzy img,
+#powerplay img{
+  transition: all 0.3s ease;
+}
 #skystone {
   color: rgb(174, 204, 214);
 }
@@ -249,7 +254,6 @@ a:hover {
 }
 
 .robot-sum-text:hover {
-  font-size: 20.3px;
 }
 
 /* Scrollbar styles */
@@ -376,7 +380,25 @@ a:hover {
   }
 
   img {
-    margin-left:-10px;
+    margin-left: -10px;
   }
-  #skystone img:hover{}
+
+  #robots-div .robots-sum .robot-sum-text:hover {}
+
+  .robot-img {
+    width: 50%;
+    float: right;
+    margin-right: 13px;
+    margin-left: 13px;
+    transition: all 0.3s ease;
+  }
+
+  .robot-img:hover {
+    filter: brightness(110%);
+    width: 70.5%;
+  }
+
+  .robot-img:hover {}
+
+  #skystone img:hover {}
 }
