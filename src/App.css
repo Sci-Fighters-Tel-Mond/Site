@@ -275,3 +275,99 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(93, 100, 75);
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 30px;
+    overflow-x: hidden;
+  }
+
+  /* Adjustments for smaller screens */
+
+  /* Sidebar Styles */
+  .Sidebar {
+    width: 100vw;
+  }
+
+  /* Header Styles */
+  .header {
+    width: 100vw;
+  }
+
+  #contactForm {
+    font-size: 30px;
+  }
+
+  #contactForm input,
+  #contactForm textarea {
+    font-size: 30px;
+    margin-left: -20px;
+  }
+
+  /* Contact Form Styles */
+  #contact-firstname,
+  #contact-email,
+  #contact-message {
+    width: 100%;
+  }
+
+  /* Introduction and About Section Styles */
+  #introduction-text,
+  #about-text,
+  #contactForm,
+  #robots-div,
+  .textarea {
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 5%;
+    margin-top: 120px;
+  }
+
+  /* Seasons Section Styles */
+  #seasons-sum img {
+    width: 100%;
+    padding-right: 0;
+    float: none;
+  }
+
+  /* Game Sections Styles */
+  #skystone,
+  #ultimate-goal,
+  #freight-frenzy,
+  #powerplay {
+    font-size: 30px;
+    /* Adjust font size for smaller screens */
+  }
+
+  /* Header Links Styles */
+  #header-links {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* Robot Image Styles */
+  .robot-img {
+    width: 50%;
+    float: right;
+    margin-right: 10vw;
+    margin-left: 0;
+  }
+
+  /* Robot Summary Text Styles */
+  .robot-sum-text {
+    font-size: 30px;
+    /* Adjust font size for smaller screens */
+  }
+
+  #introduction-text {
+    font-size: 30px;
+  }
+
+  #about-text {
+    font-size: 30px;
+  }
+
+  .Sidebar {
+    margin-bottom: 30px;
+  }
+}
