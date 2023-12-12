@@ -148,12 +148,14 @@ input[type="submit"]:hover {
 #powerplay {
   transition: all 0.3s ease, filter 0.3s ease;
 }
+
 #skystone img,
 #ultimate-goal img,
 #freight-frenzy img,
-#powerplay img{
+#powerplay img {
   transition: all 0.3s ease;
 }
+
 #skystone {
   color: rgb(174, 204, 214);
 }
@@ -233,6 +235,7 @@ a:hover {
   cursor: pointer;
   size: 20px;
   margin-left: 5px;
+  color: rgb(51, 51, 51);
 }
 
 .robot-img {
@@ -253,8 +256,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.robot-sum-text:hover {
-}
+.robot-sum-text:hover {}
 
 /* Scrollbar styles */
 
