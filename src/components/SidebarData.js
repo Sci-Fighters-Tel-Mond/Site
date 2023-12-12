@@ -4,25 +4,25 @@ export const SidebarData = [
 	{
 		title: 'Home',
 		icon: 'fa-solid fa-house',
-		link: '/home'
+		link: '?home'
 	}, {
 		title: 'About',
 		icon: 'fa-solid fa-address-card',
-		link: '/about'
+		link: '?about'
 	},
 	{
 		title: 'Robots',
 		icon: 'fa-solid fa-robot',
-		link: '/robots'
+		link: '?robots'
 	},
 	{
 		title: 'Sponsors',
 		icon: 'fa-solid fa-money-bill',
-		link: '/sponsors'
+		link: '?sponsors'
 	},
 	{
 		title: 'Contact Us',
 		icon: 'fa-solid fa-phone',
-		link: 'contact'
+		link: "?contact"
 	},
 ];

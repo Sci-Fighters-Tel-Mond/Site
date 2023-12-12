@@ -8,7 +8,7 @@ import RobotsPage from './Pages/RobotsPage';
 import SponsorsPage from './Pages/SponsorsPage';
 
 function App() {
-  let pathname = window.location.pathname;
+  let pathname = window.location.search;
   return (
     <div className="App">
       {
@@ -27,15 +27,15 @@ function App() {
         //#endregion
       }
 
-      {(pathname === "/home" || pathname === "/") &&
+      {(pathname === "?home" || pathname === '') &&
         <HomePage />
-      } {pathname === "/about" &&
+      } {pathname === "?about" &&
         <AboutPage />
-      } {pathname === "/contact" &&
+      } {pathname === "?contact" &&
         <ContactPage />}
-      {pathname === "/robots" &&
+      {pathname === "?robots" &&
         <RobotsPage />}
-      {pathname === "/sponsors" && <SponsorsPage />}
+      {pathname === "?sponsors" && <SponsorsPage />}
       <Sidebar></Sidebar>
     </div>
   );

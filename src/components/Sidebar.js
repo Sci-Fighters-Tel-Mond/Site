@@ -9,10 +9,10 @@ function Sidebar() {
 			{SidebarData.map((val, key) => {
 				return (
 					<li key={key} onClick={
-						() => { window.location.pathname = val.link }
+						() => { window.location.search = val.link; }
 					}
 						className="row"
-						id={window.location.pathname === val.link ? "active" : ""}>
+						id={window.location.search === val.link ? "active" : ""}>
 						<div>
 							<i className={val.icon}></i>  {val.title}
 						</div>
