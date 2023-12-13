@@ -1,5 +1,5 @@
 import React from "react";
-import _3ndy from '../Images/Sponsors/_3dny.png';
+import tdny from '../Images/Sponsors/tdny.png';
 import TelMond from '../Images/Sponsors/TelMond.png'
 import mivrag from '../Images/Sponsors/mivrag.png';
 import Intel from '../Images/Sponsors/Intel.png';
@@ -16,45 +16,40 @@ function SponsorsPage() {
 			<div id="sponsors-container">
 				<div className="sponsor">
 					<a href="https://tel-mond.muni.il/">
-						<img src={TelMond} />
+						<img src={TelMond} alt="" />
 					</a>
 				</div>
 				<div className="sponsor">
 					<a href="http://mivrag.co.il/">
-						<img src={mivrag} />
+						<img src={mivrag} alt="" />
 					</a>
 				</div>
 				<a href="https://www.intel.co.il/">
-					<img src={Intel} />
+					<img src={Intel} alt="" />
 				</a>
 				<div>
 					<a href="https://3dny.co.il/">
-						<img src={_3ndy} />
+						<img src={tdny} alt="" />
 					</a>
 				</div>
 				<div>
 					<a href="https://tabunhatzoani.wixsite.com/tabun">
-						<img src={tabun} />
-					</a>
-				</div>
-				<div>
-					<a href="https://sharonit.business.site/">
-						<img src={Sharonit} />
+						<img src={tabun} alt="" />
 					</a>
 				</div>
 				<div>
 					<a href="https://rabintm.tik-tak.net/">
-						<img src={rabin} />
+						<img src={rabin} alt="" />
 					</a>
 				</div>
 				<div>
 					<a href="http://www.st-enclosures.com/">
-						<img src={ST} />
+						<img src={ST} alt="" />
 					</a>
 				</div>
 				<div>
 					<a href="https://www.systematics.co.il/">
-						<img src={Systematics} />
+						<img src={Systematics} alt="" />
 					</a>
 				</div>
 			</div>
