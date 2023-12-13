@@ -3,6 +3,7 @@ import '../App.css';
 import Scorpion from '../Images/Scorpion.png';
 import Jaccuse from '../Images/Jaccuse.png';
 import Cobalt from '../Images/Cobalt.png';
+import Constantin from '../Images/Constantin.jpg';
 function HomePage() {
 	return (<div id="homepage">
 		<div id="introduction-text">We're team SciFighters #16473, our team consists of students from the 8th to 10th grade, in Rabin school, Tel Mond.<br />
@@ -37,6 +38,7 @@ function HomePage() {
 					</ul></div>
 				<div id="powerplay">
 					POWER PLAY 2022-2023:
+					<img src={Constantin}></img><br />
 					<ul>
 						<li>
 							Finalistic alliance in the training competition in Megido
