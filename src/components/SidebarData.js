@@ -21,6 +21,11 @@ export const SidebarData = [
 		link: '?sponsors'
 	},
 	{
+		title: 'Projects',
+		icon : 'fa-solid fa-computer',
+		link: '?projects'
+	},
+	{
 		title: 'Contact Us',
 		icon: 'fa-solid fa-phone',
 		link: "?contact"

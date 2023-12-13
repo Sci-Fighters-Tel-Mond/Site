@@ -19,7 +19,7 @@ function SponsorsPage() {
 						<img src={TelMond} />
 					</a>
 				</div>
-				<div>
+				<div className="sponsor">
 					<a href="http://mivrag.co.il/">
 						<img src={mivrag} />
 					</a>
