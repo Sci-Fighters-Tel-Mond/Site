@@ -24,30 +24,32 @@ function SponsorsPage() {
 						<img src={mivrag} alt="" />
 					</a>
 				</div>
-				<a href="https://www.intel.co.il/">
-					<img src={Intel} alt="" />
-				</a>
-				<div>
+				<div className="sponsor">
+					<a href="https://www.intel.co.il/">
+						<img src={Intel} alt="" />
+					</a>
+				</div>
+				<div className="sponsor">
 					<a href="https://3dny.co.il/">
 						<img src={tdny} alt="" />
 					</a>
 				</div>
-				<div>
+				<div className="sponsor">
 					<a href="https://tabunhatzoani.wixsite.com/tabun">
 						<img src={tabun} alt="" />
 					</a>
 				</div>
-				<div>
+				<div className="sponsor">
 					<a href="https://rabintm.tik-tak.net/">
 						<img src={rabin} alt="" />
 					</a>
 				</div>
-				<div>
+				<div className="sponsor">
 					<a href="http://www.st-enclosures.com/">
 						<img src={ST} alt="" />
 					</a>
 				</div>
-				<div>
+				<div className="sponsor">
 					<a href="https://www.systematics.co.il/">
 						<img src={Systematics} alt="" />
 					</a>

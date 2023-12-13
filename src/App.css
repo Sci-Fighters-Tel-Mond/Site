@@ -7,6 +7,8 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
+
+  html,
   body {
     cursor: var(--cursorDefault);
   }
@@ -34,8 +36,7 @@
   .Sidebar *,
   .SidebarList,
   .SidebarList *,
-  input[type="submit"]
-  {
+  input[type="submit"] {
     cursor: var(--cursorPointer);
   }
 }
@@ -86,6 +87,18 @@ body {
   font-size: 200%;
 }
 
+.sidebarlist-text {
+  transition: filter 0.3s ease;
+}
+
+.sidebarlist-text:hover {
+  filter: drop-shadow(3px 1px 5px #1616c7);
+}
+
+#header-logo {
+  filter: drop-shadow(0 0 0.75rem rgb(37, 35, 35));
+}
+
 .SidebarList #active {
   background-color: rgb(59, 61, 67);
 }
@@ -98,6 +111,7 @@ body {
   width: 100vw;
   min-height: 55px;
 }
+
 
 .header img {
   margin-left: 10px;
@@ -113,6 +127,10 @@ body {
   margin: 3px;
   border-radius: 10px;
   width: 50%;
+}
+
+#contactFormForm {
+  margin: 12px;
 }
 
 #contact-message {
@@ -192,6 +210,7 @@ input[type="submit"]:hover {
 #ultimate-goal img,
 #freight-frenzy img,
 #powerplay img {
+  filter: drop-shadow(15px 10px 4px rgb(77, 80, 66));
   transition: all 0.3s ease;
 }
 
@@ -282,13 +301,15 @@ a:hover {
 .robot-img {
   width: 30%;
   float: right;
-  margin-right: 13px;
-  margin-left: 13px;
+  margin-right: 20px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  filter: drop-shadow(15px 15px 4px rgb(76, 82, 58));
   transition: all 0.3s ease;
 }
 
 .robot-img:hover {
-  filter: brightness(110%);
+  filter: brightness(110%) drop-shadow(15px 15px 4px rgb(76, 82, 58));
   width: 30.5%;
 }
 
@@ -351,6 +372,10 @@ a:hover {
 
 #sponsors-container img:hover {
   width: 72%;
+}
+
+.sponsor {
+  filter: drop-shadow(15px 10px 4px rgb(77, 80, 66));
 }
 
 @media only screen and (max-width: 768px) {

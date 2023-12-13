@@ -28,7 +28,7 @@ function ContactPage() {
 
 	return (<div id="contactForm">
 		<h1 className='center-text'>Contact Us</h1>
-		<form ref={form} onSubmit={sendEmail}>
+		<form ref={form} onSubmit={sendEmail} id="contactFormForm">
 			<input placeholder='Full Name' type="text" id="contact-firstname" name="user_name" required></input>  <br />
 			<input placeholder='Email' id="contact-email" name="user_email" type="email" required></input>  <br />
 			<textarea placeholder='Message' id="contact-message" name="message" required></textarea><br />

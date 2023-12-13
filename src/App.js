@@ -14,7 +14,7 @@ function App() {
       {
         //#region Header 
       }
-      <div className="header"><picture><img src={GroupLogo} alt="Group logo" /></picture>SciFighters #16473
+      <div className="header"><picture><img src={GroupLogo} alt="Group logo" id="header-logo" /></picture><span id="header-text">SciFighters #16473</span>
         <span id="header-links"><a href="https://www.youtube.com/channel/UCAvjhx10eeqAYq6_kjmAqFg/featured" target='_blank'><i className="fa-brands fa-youtube header-link"
         ></i></a>
           <a style={{ color: "rgb(51, 51, 51)" }} href="https://www.instagram.com/scifighters16473/" target='_blank'><i className="fa-brands fa-instagram header-link"></i></a>
