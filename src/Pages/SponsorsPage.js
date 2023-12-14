@@ -35,7 +35,7 @@ function SponsorsPage() {
 					</a>
 				</div>
 				<div className="sponsor">
-					<a href="https://tabunhatzoani.wixsite.com/tabun">
+					<a href="https://www.facebook.com/tabunhatzoani">
 						<img src={tabun} alt="" />
 					</a>
 				</div>
