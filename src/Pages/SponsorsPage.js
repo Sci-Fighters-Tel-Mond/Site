@@ -9,10 +9,11 @@ import ST from '../Images/Sponsors/ST.png';
 import Systematics from '../Images/Sponsors/Systematics.png';
 import tabun from '../Images/Sponsors/tabun.png';
 import '../App.css';
+import Footer from "../components/Footer";
 function SponsorsPage() {
 	return (
 		<div className="textarea">
-			<h1 className="center-text" style={{ margin: "10px" }}>Sponsors: </h1>
+			<h1 className="center-text">Sponsors: </h1>
 			<div id="sponsors-container">
 				<div className="sponsor">
 					<a href="https://tel-mond.muni.il/">
@@ -55,7 +56,9 @@ function SponsorsPage() {
 					</a>
 				</div>
 			</div>
+			<Footer style={{ marginTop: "20px" }}></Footer>
 		</div>
+
 	)
 }
 

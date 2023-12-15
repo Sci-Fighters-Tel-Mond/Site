@@ -4,6 +4,7 @@ import Scorpion from '../Images/Scorpion.png';
 import Jaccuse from '../Images/Jaccuse.png';
 import Cobalt from '../Images/Cobalt.png';
 import Constantin from '../Images/Constantin.jpg';
+import Footer from "../components/Footer";
 function HomePage() {
 	return (<div id="homepage">
 		<div id="introduction-text">We're team SciFighters #16473, our team consists of students from the 8th to 10th grade, in Rabin school, Tel Mond.<br />
@@ -19,7 +20,7 @@ function HomePage() {
 				</div>
 				<div id="ultimate-goal">
 					ULTIMATE GOAL 2020-2021:
-					<img src={Cobalt}></img><br />
+					<a href="https://www.youtube.com/watch?v=c15SsHTXnzs&ab_channel=SciFighters"><img src={Cobalt}></img></a><br />
 					<ul>
 						<li>Winning alliance in nationals</li>
 						<li>Ranked: 1st in Israel</li>
@@ -28,7 +29,7 @@ function HomePage() {
 				</div>
 				<div id="freight-frenzy">
 					FREIGHT FRENZY 2021-2022:
-					<img src={Jaccuse}></img><br />
+					<a href="https://www.youtube.com/watch?v=GwNWhzqpOz8&ab_channel=SciFighters"><img src={Jaccuse}></img></a><br />
 					<ul>
 						<li>
 							Innovation award
@@ -38,7 +39,7 @@ function HomePage() {
 					</ul></div>
 				<div id="powerplay">
 					POWER PLAY 2022-2023:
-					<img src={Constantin}></img><br />
+					<a href="https://www.youtube.com/watch?v=7YRnOd7ciZU&ab_channel=SciFighters"><img src={Constantin}></img></a><br />
 					<ul>
 						<li>
 							Finalistic alliance in the training competition in Megido
@@ -51,6 +52,7 @@ function HomePage() {
 						</li>
 					</ul></div>
 			</div>
+			<Footer style={{ marginTop: "90px" }}></Footer>
 		</div>
 	</div>);
 }

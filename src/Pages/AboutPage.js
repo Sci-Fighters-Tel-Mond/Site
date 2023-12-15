@@ -1,5 +1,6 @@
 import React from "react";
 import '../App.css'
+import Footer from "../components/Footer";
 
 function AboutPage() {
 	return (
@@ -17,6 +18,7 @@ function AboutPage() {
 				<div className="center-text" id="about-workflow">Our Workflow</div>
 				In our team, we're devided to groups of profesion in diffrent fields : Programming, Building, CAD, Strategy, Social && Media. In our team, we promote team work, learning, creativity, technical thinking, leadership and contributing to the Community. <br />
 				<a href="https://www.firstinspires.org/" className="button">More about FIRST</a>
+				<Footer style={{ marginTop: "30px" }}></Footer>
 			</div>
 		</div>);
 }
