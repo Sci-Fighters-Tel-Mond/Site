@@ -20,11 +20,11 @@ export const SidebarData = [
 		icon: 'fa-solid fa-money-bill',
 		link: '?sponsors'
 	},
-	{
-		title: 'Projects',
-		icon : 'fa-solid fa-computer',
-		link: '?projects'
-	},
+	// {
+	// 	title: 'Projects',
+	// 	icon : 'fa-solid fa-computer',
+	// 	link: '?projects'
+	// },
 	{
 		title: 'Contact Us',
 		icon: 'fa-solid fa-phone',

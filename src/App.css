@@ -303,7 +303,7 @@ a:hover {
 }
 
 .robot-img {
-  width: 30%;
+  width: 300px;
   float: right;
   margin-right: 20px;
   margin-left: 15px;
@@ -314,7 +314,7 @@ a:hover {
 
 .robot-img:hover {
   filter: brightness(110%) drop-shadow(15px 15px 4px rgb(76, 82, 58));
-  width: 30.5%;
+  width: 303px;
 }
 
 .robot-sum-text {
@@ -322,10 +322,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.robot-sum-text:hover {}
-
 /* Scrollbar styles */
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -363,7 +360,30 @@ a:hover {
   height: auto;
   display: inline-block;
 }
+.imagescrollview {
+  position: relative;
+  margin-bottom: 300px;
+  margin-right: 10px;
+}
 
+.imagescrollview img {
+  width: 100%;
+  position: absolute;
+}
+.imagescrollview #imagescrollviewbuttons {
+  position: relative;
+  height: 100%;
+}
+#imagescrollviewbuttons-b {
+  position: relative;
+  height: 100%;
+  float:left;
+}
+#imagescrollviewbuttons-f {
+  position: relative;
+  height: 100%;
+  float:right;
+}
 #sponsors-container img {
   width: 70%;
   transition: all ease 0.3s;

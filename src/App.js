@@ -4,6 +4,7 @@ import GroupLogo from './Images/GroupLogo.png'
 import AboutPage from './Pages/AboutPage';
 import ContactPage from './Pages/ContactPage';
 import HomePage from './Pages/HomePage';
+import ProjectsPage from './Pages/ProjectsPage';
 import RobotsPage from './Pages/RobotsPage';
 import SponsorsPage from './Pages/SponsorsPage';
 
@@ -28,6 +29,7 @@ function App() {
       {pathname === "?robots" &&
         <RobotsPage />}
       {pathname === "?sponsors" && <SponsorsPage />}
+      {pathname === "?projects" && <ProjectsPage />}
       <Sidebar></Sidebar>
     </div>
   );
