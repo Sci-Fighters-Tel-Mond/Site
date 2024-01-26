@@ -98,7 +98,9 @@ body {
 #header-logo {
   filter: drop-shadow(0 0 0.75rem rgb(37, 35, 35));
 }
-
+#header-text{
+  text-shadow: 1px 1.5px 0px #1c1616;
+}
 .SidebarList #active {
   background-color: rgb(59, 61, 67);
 }
@@ -257,6 +259,11 @@ input[type="submit"]:hover {
   transition: font-size 0.3s ease;
 }
 
+.text-shadow,
+h1 {
+  text-shadow: 1px 2px 0px #4e2222;
+}
+
 #about-header:hover,
 #about-accomplishments:hover,
 #about-workflow:hover {
@@ -360,30 +367,47 @@ a:hover {
   height: auto;
   display: inline-block;
 }
+
 .imagescrollview {
   position: relative;
   margin-bottom: 300px;
   margin-right: 10px;
+  size: 100%;
 }
 
 .imagescrollview img {
   width: 100%;
   position: absolute;
+  transition: all 0.3s ease;
 }
+
 .imagescrollview #imagescrollviewbuttons {
   position: relative;
   height: 100%;
+  background-color: rgb(103, 151, 171);
+  filter: opacity(50%);
 }
+
+.imagescrollview #imagescrollviewbuttons p {
+  color: black;
+  filter: opacity(100%);
+}
+
 #imagescrollviewbuttons-b {
   position: relative;
-  height: 100%;
-  float:left;
+  height: 240px;
+  float: left;
+  transition: all 0.3s ease;
 }
+
 #imagescrollviewbuttons-f {
   position: relative;
-  height: 100%;
-  float:right;
+  height: 240px;
+  float: right;
+  transition: all 0.3s ease;
+
 }
+
 #sponsors-container img {
   width: 70%;
   transition: all ease 0.3s;
@@ -497,7 +521,6 @@ a:hover {
   /* Robot Summary Text Styles */
   .robot-sum-text {
     font-size: 30px;
-    /* Adjust font size for smaller screens */
   }
 
   #introduction-text {

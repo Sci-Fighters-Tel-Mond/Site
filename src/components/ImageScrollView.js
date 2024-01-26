@@ -10,8 +10,8 @@ function ImageScrollView(props) {
 				<img src={image.src} alt={`Image ${index}`} key={index} style={{ display: `${index === currentImg ? 'inline' : 'none'}` }} />
 			))}
 			<div id="imagescrollviewbuttons">
-				<button id="imagescrollviewbuttons-b" onClick={() => { setCurrentImg(currentImg !== props.images.length - 1 ? currentImg + 1 : 0); }}>B</button>
-				<button id="imagescrollviewbuttons-f" onClick={() => { setCurrentImg(currentImg !== 0 ? currentImg - 1 : props.images.length - 1); }}>F</button>
+				<button id="imagescrollviewbuttons-b" onClick={() => { setCurrentImg(currentImg !== props.images.length - 1 ? currentImg + 1 : 0); }}><p>⇦</p></button>
+				<button id="imagescrollviewbuttons-f" onClick={() => { setCurrentImg(currentImg !== 0 ? currentImg - 1 : props.images.length - 1); }}><p>⇨</p></button>
 			</div>
 		</div>
 	);

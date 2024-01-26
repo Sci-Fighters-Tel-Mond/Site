@@ -13,7 +13,7 @@ import Footer from "../components/Footer";
 function SponsorsPage() {
 	return (
 		<div className="textarea">
-			<h1 className="center-text">Sponsors: </h1>
+			<h1 className="center-text sponsors-header">Sponsors: </h1>
 			<div id="sponsors-container">
 				<div className="sponsor">
 					<a href="https://tel-mond.muni.il/">
