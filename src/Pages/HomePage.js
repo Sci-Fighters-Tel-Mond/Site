@@ -50,6 +50,9 @@ function HomePage() {
 						<li>
 							Ranked: 7th in Israel
 						</li>
+						<li>
+							Dean's List award - Yuval Peled
+						</li>
 					</ul></div>
 			</div>
 			<Footer style={{ marginTop: "90px" }}></Footer>
