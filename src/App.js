@@ -7,6 +7,7 @@ import HomePage from './Pages/HomePage';
 import ProjectsPage from './Pages/ProjectsPage';
 import RobotsPage from './Pages/RobotsPage';
 import SponsorsPage from './Pages/SponsorsPage';
+import FixedFooter from './components/FixedFooter';
 
 function App() {
   let pathname = window.location.search;
@@ -31,6 +32,7 @@ function App() {
       {pathname === "?sponsors" && <SponsorsPage />}
       {pathname === "?projects" && <ProjectsPage />}
       <Sidebar></Sidebar>
+      <FixedFooter></FixedFooter>
     </div>
   );
 }

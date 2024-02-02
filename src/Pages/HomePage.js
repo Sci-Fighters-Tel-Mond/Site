@@ -7,10 +7,10 @@ import Constantin from '../Images/Constantin.jpg';
 import Footer from "../components/Footer";
 function HomePage() {
 	return (<div id="homepage">
-		<div id="introduction-text">We're team SciFighters #16473, our team consists of students from the 8th to 10th grade, in Rabin school, Tel Mond.<br />
-			This is our 6th year that we're taking part in the FIRST FTC program.<br /><br />
+		<div id="introduction-text"><p id="introduction-text-text">We're team SciFighters #16473, our team consists of students from the 8th to 10th grade, in Rabin school, Tel Mond.<br />
+			This is our 6th year that we're taking part in the FIRST FTC program.</p>
 			<div id="seasons-sum">
-				<div id="skystone">
+				<div id="skystone">	
 					SKYSTONE 2019-2020:
 					<img src={Scorpion}></img><br />
 					<ul>

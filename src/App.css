@@ -68,6 +68,16 @@ body {
   width: 100%;
 }
 
+#fixed-footer {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 20px;
+  background-color: rgb(83, 86, 71);
+  border: solid 1px black;
+  bottom: 0;
+}
+
 .SidebarList .row {
   max-width: 100%;
   height: 50px;
@@ -98,9 +108,11 @@ body {
 #header-logo {
   filter: drop-shadow(0 0 0.75rem rgb(37, 35, 35));
 }
-#header-text{
+
+#header-text {
   text-shadow: 1px 1.5px 0px #1c1616;
 }
+
 .SidebarList #active {
   background-color: rgb(59, 61, 67);
 }
@@ -110,7 +122,7 @@ body {
   font-family: Impact, Haettenschweiler, sans-serif;
   font-size: 45px;
   background-color: rgb(132, 140, 109);
-  width: 100vw;
+  width: 100%;
   min-height: 55px;
 }
 
@@ -169,22 +181,20 @@ input[type="submit"]:hover {
 #contactForm,
 #robots-div,
 .textarea {
-  margin-top: 1%;
-  margin-left: 1%;
   text-align: left;
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 12%;
-  margin-left: 15%;
-  max-width: 83%;
+  top: 80px;
+  margin-left: 220px;
+  max-width: 80%;
   font-weight: bolder;
   background-color: rgb(106, 111, 90);
   border: 3px solid black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   transition: width 0.3s ease;
-  padding-left: 10px;
   padding-bottom: 10px;
+  padding: 10px;
 }
 
 /* Seasons Section Styles */
@@ -295,17 +305,12 @@ a:hover {
   filter: brightness(85%);
 }
 
-/* Header Links Styles */
-#header-links {
-  padding-left: 55%;
-}
-
 .header-link {
   margin-top: 2%;
   float: left;
   font-size: 200%;
   size: 30%;
-  margin-left: 0.5%;
+  margin-left: 1.5%;
   color: rgb(51, 51, 51);
 }
 
@@ -482,10 +487,10 @@ a:hover {
   #contactForm,
   #robots-div,
   .textarea {
-    width: 100%;
-    margin-left: 5%;
-    padding-left: 5%;
+    width: 100vw;
+    margin-left: 1%;
     margin-top: 360px;
+    max-width: 98vw;
   }
 
   /* Seasons Section Styles */
@@ -501,13 +506,34 @@ a:hover {
   #ultimate-goal,
   #freight-frenzy,
   #powerplay {
-    font-size: 30px;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  #skystone img,
+  #ultimate-goal img,
+  #freight-frenzy img,
+  #powerplay img {
+    size: 30px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+
+  #skystone:hover,
+  #ultimate-goal:hover,
+  #freight-frenzy:hover,
+  #powerplay:hover {
+    font-size: 20px;
   }
 
   /* Header Links Styles */
   #header-links {
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  #introduction-text-text {
+    font-size: 20px;
   }
 
   /* Robot Image Styles */
@@ -539,7 +565,6 @@ a:hover {
     margin-left: -10px;
   }
 
-  #robots-div .robots-sum .robot-sum-text:hover {}
 
   .robot-img {
     width: 50%;
@@ -550,13 +575,18 @@ a:hover {
   }
 
   .robot-img:hover {
-    filter: brightness(110%);
-    width: 70.5%;
+    width: 50.5%;
+    filter: brightness(110%) drop-shadow(15px 15px 4px rgb(76, 82, 58));
   }
 
-  .robot-img:hover {}
+  .robot-sum-text,
+  #about-text {
+    font-size: 23px;
+  }
 
-  #skystone img:hover {}
+  #fixed-footer {
+    display: none;
+  }
 }
 
 .footer {
