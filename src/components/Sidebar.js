@@ -12,7 +12,7 @@ function Sidebar() {
 						() => { window.location.search = val.link; }
 					}
 						className="row"
-						id={window.location.search === val.link ? "active" : ""}>
+						>
 						<div>
 							<i className={val.icon}></i>  <span className="sidebarlist-text">{val.title}</span>
 						</div>
