@@ -4,8 +4,8 @@ function HamburgerMenu() {
 	const toBool = (string) => {
 		return string.toLowerCase() === 'true';
 	};
-
-	const [state, setState] = useState(toBool(window.localStorage.getItem('menu-open')));
+	let suppousedState = toBool(window.localStorage.getItem('menu-open'));
+	const [state, setState] = useState(suppousedState == undefined ? false : suppousedState);
 
 	const toggleSidebar = () => {
 		const newState = !state;
@@ -16,29 +16,29 @@ function HamburgerMenu() {
 
 	const renderState = (currentState) => {
 		console.log('Current State:', currentState);
-		
+
 		const sidebarList = document.getElementsByClassName('Sidebar')[0];
 		if (sidebarList) {
-		  sidebarList.classList.toggle('active', currentState);
+			sidebarList.classList.toggle('active', currentState);
 		}
-	  
+
 		const elementsToAdjust = [
-		  '#introduction-text',
-		  '#about-text',
-		  '#contactForm',
-		  '#robots-div',
-		  '.textarea',
+			'#introduction-text',
+			'#about-text',
+			'#contactForm',
+			'#robots-div',
+			'.textarea',
 		];
-	  
+
 		elementsToAdjust.forEach((elementId) => {
-		  const element = document.querySelector(elementId);
-		  if (element) {
-			element.style.marginTop = currentState ? '360px' : '70px';
-			console.log(`Updated ${elementId} marginTop to ${currentState ? '360px' : '0'}`);
-		  }
+			const element = document.querySelector(elementId);
+			if (element) {
+				element.style.marginTop = currentState ? '360px' : '70px';
+				console.log(`Updated ${elementId} marginTop to ${currentState ? '360px' : '0'}`);
+			}
 		});
-	  };
-	  
+	};
+
 
 	useEffect(() => {
 		renderState(state);
