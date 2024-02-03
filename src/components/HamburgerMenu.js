@@ -4,8 +4,8 @@ function HamburgerMenu() {
 	const toBool = (string) => {
 		return string.toLowerCase() === 'true';
 	};
-	let suppousedState = toBool(window.localStorage.getItem('menu-open'));
-	const [state, setState] = useState(suppousedState == undefined ? false : suppousedState);
+	let suppousedState = window.localStorage.getItem('menu-open');
+	const [state, setState] = useState(suppousedState == undefined ? false : toBool(suppousedState));
 
 	const toggleSidebar = () => {
 		const newState = !state;
