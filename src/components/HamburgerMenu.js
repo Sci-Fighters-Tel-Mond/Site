@@ -33,8 +33,9 @@ function HamburgerMenu() {
 		elementsToAdjust.forEach((elementId) => {
 			const element = document.querySelector(elementId);
 			if (element) {
-				element.style.marginTop = currentState ? '360px' : '70px';
-				console.log(`Updated ${elementId} marginTop to ${currentState ? '360px' : '0'}`);
+				if (window.screen.width <= 768) {
+					element.style.marginTop = currentState ? '360px' : '70px';
+				}
 			}
 		});
 	};
