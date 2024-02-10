@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 function RobotsPage() {
 	return (
-		<div id="robots-div">
+		<div id="robots-div" className="page">
 			<div className="robot-sum">
 				<h1 className="center-text">Yigal Junior</h1>
 				<img src={YigalJunior} className="robot-img" />

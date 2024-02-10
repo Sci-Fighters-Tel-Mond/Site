@@ -15,19 +15,13 @@ function HamburgerMenu() {
 	};
 
 	const renderState = (currentState) => {
-		console.log('Current State:', currentState);
-
 		const sidebarList = document.getElementsByClassName('Sidebar')[0];
 		if (sidebarList) {
 			sidebarList.classList.toggle('active', currentState);
 		}
 
 		const elementsToAdjust = [
-			'#introduction-text',
-			'#about-text',
-			'#contactForm',
-			'#robots-div',
-			'.textarea',
+			'.page'
 		];
 
 		elementsToAdjust.forEach((elementId) => {
@@ -35,6 +29,8 @@ function HamburgerMenu() {
 			if (element) {
 				if (window.screen.width <= 768) {
 					element.style.marginTop = currentState ? '360px' : '70px';
+				} else {
+					element.style.marginTop = "0px";
 				}
 			}
 		});

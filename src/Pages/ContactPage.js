@@ -26,7 +26,7 @@ function ContactPage() {
 			});
 	};
 
-	return (<div id="contactForm">
+	return (<div id="contactForm" className='page'>
 		<h1 className='center-text'>Contact Us</h1>
 		<form ref={form} onSubmit={sendEmail} id="contactFormForm">
 			<input placeholder='Full Name' type="text" id="contact-firstname" name="user_name" required></input>  <br />

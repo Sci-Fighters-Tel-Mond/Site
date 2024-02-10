@@ -1,38 +1,33 @@
 import './App.css';
+import React from 'react';
 import HamburgerMenu from './components/HamburgerMenu';
 import Sidebar from './components/Sidebar';
-import GroupLogo from './Images/GroupLogo.png'
-import AboutPage from './Pages/AboutPage';
-import ContactPage from './Pages/ContactPage';
-import HomePage from './Pages/HomePage';
-import ProjectsPage from './Pages/ProjectsPage';
-import RobotsPage from './Pages/RobotsPage';
-import SponsorsPage from './Pages/SponsorsPage';
+import GroupLogo from './Images/GroupLogo.png';
+import { getPageByPathname } from './components/SidebarData';
 
 function App() {
   let pathname = window.location.search;
+  if (pathname === '') {
+    pathname = "?home";
+    window.location.search = "?home";
+  }
+
   return (
     <div className="App">
-      {
-        //#region Header 
-      }
+      {/* Header */}
+      <div className="header">
+        <HamburgerMenu />
+        <picture>
+          <img src={GroupLogo} alt="Group logo" id="header-logo" />
+        </picture>
+        <span id="header-text">SciFighters #16473</span>
+      </div>
 
-      <div className="header"><HamburgerMenu></HamburgerMenu><picture><img src={GroupLogo} alt="Group logo" id="header-logo" /></picture><span id="header-text">SciFighters #16473</span></div>
-      {
-        //#endregion
-      }
+      {/* Render the page based on the current pathname */}
+      {getPageByPathname(pathname)}
 
-      {(pathname === "?home" || pathname === '') &&
-        <HomePage />
-      } {pathname === "?about" &&
-        <AboutPage />
-      } {pathname === "?contact" &&
-        <ContactPage />}
-      {pathname === "?robots" &&
-        <RobotsPage />}
-      {pathname === "?sponsors" && <SponsorsPage />}
-      {pathname === "?projects" && <ProjectsPage />}
-      <Sidebar></Sidebar>
+      {/* Sidebar */}
+      <Sidebar />
     </div>
   );
 }

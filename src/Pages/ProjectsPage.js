@@ -9,7 +9,7 @@ import Jaccuse from '../Images/Jaccuse.png';
 
 function ProjectsPage() {
 	return (
-		<div id="projects-page">
+		<div id="projects-page" className='page'>
 			<div className='textarea'>
 				<h1 className='center-text'>Our Projects: </h1>
 				<ImageScrollView images={[

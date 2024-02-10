@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 function AboutPage() {
 	return (
-		<div id="aboutpage">
+		<div id="aboutpage" className="page">
 
 			<div id="about-text">
 				<div className="center-text text-shadow" id="about-header">Who Are We?</div>

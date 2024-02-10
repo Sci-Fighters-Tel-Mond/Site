@@ -3,7 +3,6 @@ import '../App.css';
 
 function ImageScrollView(props) {
 	const [currentImg, setCurrentImg] = useState(0);
-	console.log(props.images.length, currentImg);
 	return (
 		<div className="imagescrollview" style={props.style}>
 			{props.images.map((image, index) => (

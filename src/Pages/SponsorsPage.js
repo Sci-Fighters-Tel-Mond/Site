@@ -12,7 +12,7 @@ import '../App.css';
 import Footer from "../components/Footer";
 function SponsorsPage() {
 	return (
-		<div className="textarea">
+		<div className="textarea page">
 			<h1 className="center-text sponsors-header">Sponsors: </h1>
 			<div id="sponsors-container">
 				<div className="sponsor">

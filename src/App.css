@@ -172,12 +172,17 @@ input[type="submit"]:hover {
   font-size: 26px;
 }
 
+.pagenotfoundcontainer {
+  display: flex;
+  flex-direction: row;
+}
+.pagenotfoundleft,
+.pagenotfoundright {
+  flex-basis: 50%;
+}
+
 /* Introduction and About Section Styles */
-#introduction-text,
-#about-text,
-#contactForm,
-#robots-div,
-.textarea {
+.page {
   text-align: left;
   color: white;
   font-size: 20px;
@@ -513,12 +518,7 @@ a:hover {
     width: 100%;
   }
 
-  /* Introduction and About Section Styles */
-  #introduction-text,
-  #about-text,
-  #contactForm,
-  #robots-div,
-  .textarea {
+  .page {
     width: 100vw;
     margin-left: 1%;
     margin-top: 60px;
