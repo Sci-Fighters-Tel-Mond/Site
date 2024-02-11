@@ -17,7 +17,7 @@ function HamburgerMenu() {
 	const renderState = (currentState) => {
 		const sidebarList = document.getElementsByClassName('Sidebar')[0];
 		if (sidebarList) {
-			sidebarList.classList.toggle('active', currentState);
+			sidebarList.classList.toggle('active', !currentState);
 		}
 
 		const elementsToAdjust = [
@@ -28,7 +28,7 @@ function HamburgerMenu() {
 			const element = document.querySelector(elementId);
 			if (element) {
 				if (window.screen.width <= 768) {
-					element.style.marginTop = currentState ? '360px' : '70px';
+					element.style.marginTop = !currentState ? '360px' : '70px';
 				} else {
 					element.style.marginTop = "0px";
 				}
@@ -42,9 +42,12 @@ function HamburgerMenu() {
 	}, [state]);
 
 	return (
-		<button className="hamburger-menu-button" onClick={toggleSidebar}>
-			<i className="fa-solid fa-bars"></i>
-		</button>
+		<label className="burger" htmlFor="burger">
+			<input type="checkbox" id="burger" onClick={toggleSidebar}/>
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
 	);
 }
 
